@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:200,300,regular,500,600,700,800);
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+
+	font-family: 'Ubuntu', sans-serif;
+	background: linear-gradient(149deg, rgb(27, 226, 70) 0%, rgb(49, 80, 255) 42%, rgb(212, 0, 255) 72%, rgb(255, 87, 58) 100%);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.title {
+	color: #fff;
+	font-size: 42px;
+	font-weight: 700;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+	padding: 20px;
+	width: 338px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+	color: rgba(255, 230, 0, 0)00;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.input {
+	padding: 8px 10px 10px;
+	height: 40px;
+	border-radius: 6px;
+	border: 2px solid #3e3e3e;
+	background: #fff;
+	display: block;
+	width: 100%;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+	height: 40px;
+	border-radius: 6px;
+	background: #000;
+
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.card-qr {
+    margin-top: 10px;
+    width: 160px;
+    height: 0;
+    overflow: hidden;
+
+    background-color: #03acac;
+    transition: all 0.2s ease-in;
+}
+
+.card-qr.open {
+    height: 160px;
+}
